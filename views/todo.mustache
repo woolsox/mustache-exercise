@@ -28,9 +28,16 @@
           <h1>To do:</h1>
           <ul class="todo-list">
             {{#toDoList}}
-            <li>
-              <input type="checkbox"/>
-              {{list}}
+              {{#complete}}
+                <li>
+                <input type="checkbox" checked/>
+                <del>{{list}}</del>
+              {{/complete}}
+              {{^complete}}
+                <li>
+                <input type="checkbox" />
+                {{list}}
+              {{/complete}}
             {{/toDoList}}
           </ul>
         </div>

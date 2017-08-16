@@ -12,9 +12,9 @@ app.set('view engine', 'mustache')
 app.get('/todo/', function (req, res) {
   res.render('todo',
    { "toDoList" : [
-     { "list" : 'Learn Node Basics' },
-     { "list" : 'Learn Express Basics' },
-     { "list" : 'Learn Mustache' },
+     { "list" : 'Learn Node Basics', "complete" : true },
+     { "list" : 'Learn Express Basics', "complete" : true },
+     { "list" : 'Learn Mustache', "complete" : true },
      { "list" : 'Learn HTML forms with Express' },
      { "list" : 'Learn about authentication' },
      { "list" : 'Learn how to connect to PostgreSQL' },
